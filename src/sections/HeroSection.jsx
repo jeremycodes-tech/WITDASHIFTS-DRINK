@@ -1,3 +1,4 @@
+import { asset } from "../utils/assets.js";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/all";
@@ -68,19 +69,19 @@ const HeroSection = () => {
           <>
             {isMobile && (
               <img
-                src="/images/hero-bg.png"
+                src={asset("images/hero-bg.png")}
                 className="absolute bottom-40 size-full object-cover"
               />
             )}
             <img
-              src="/images/hero-img.png"
+              src={asset("images/hero-img.png")}
               className="absolute bottom-0 left-1/2 -translate-x-1/2"
               style={{ width: "390px", height: "430px", objectFit: "contain" }}
             />
           </>
         ) : (
           <video
-            src="/videos/hero-bg.mp4"
+            src={asset("videos/hero-bg.mp4")}
             autoPlay
             muted
             playsInline

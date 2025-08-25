@@ -1,3 +1,4 @@
+import { asset } from "../utils/assets.js";
 import { useMediaQuery } from "react-responsive";
 
 const FooterSection = () => {
@@ -8,7 +9,7 @@ const FooterSection = () => {
   return (
     <section className="footer-section">
       <img
-        src="/images/footer-dip.png"
+        src={asset("images/footer-dip.png")}
         alt=""
         className="w-full object-cover -translate-y-1"
       />
@@ -22,12 +23,12 @@ const FooterSection = () => {
 
         {isMobile ? (
           <img
-            src="/images/footer-drink.png"
+            src={asset("images/footer-drink.png")}
             className="absolute top-0 object-contain"
           />
         ) : (
          <video
-  src="/videos/splash.mp4" // replace with your new file path
+  src={asset("videos/splash.mp4")} // replace with your new file path
   autoPlay
   playsInline
   muted
@@ -79,7 +80,7 @@ const FooterSection = () => {
                 placeholder="BUILT FOR LEGENDS "
                 className="w-full placeholder:font-sans placeholder:text-[#999999]"
               />
-              <img src="/images/arrow.svg" alt="arrow" />
+              <img src={asset("images/arrow.svg")} alt="arrow" />
             </div>
           </div>
         </div>

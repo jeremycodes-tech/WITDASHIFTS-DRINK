@@ -1,3 +1,4 @@
+import { asset } from "../utils/assets.js";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useMediaQuery } from "react-responsive";
@@ -36,13 +37,13 @@ const VideoPinSection = () => {
         }}
         className="size-full video-box"
       >
-        <video src="/videos/pin-video.mp4" playsInline muted loop autoPlay />
+        <video src={asset("videos/pin-video.mp4")} playsInline muted loop autoPlay />
 
         <div className="abs-center md:scale-100 scale-200">
-          <img src="/images/circle-text.svg" alt="" className="spin-circle" />
+          <img src={asset("images/circle-text.svg")} alt="" className="spin-circle" />
           <div className="play-btn">
             <img
-              src="/images/play.svg"
+              src={asset("images/play.svg")}
               alt=""
               className="size-[3vw] ml-[.5vw]"
             />

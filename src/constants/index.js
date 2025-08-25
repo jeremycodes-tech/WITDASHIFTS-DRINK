@@ -1,3 +1,4 @@
+import { asset } from "../utils/assets.js";
 const flavorlists = [
   {
     name: "Mango iced",
@@ -41,50 +42,50 @@ const nutrientLists = [
 
 const cards = [
   {
-    src: "/videos/f1.mp4",
+    src: asset("videos/f1.mp4"),
     rotation: "rotate-z-[-10deg]",
     name: "Madison",
-    img: "/images/p1.png",
+    img: asset("images/p1.png"),
     translation: "translate-y-[-5%]",
   },
   {
-    src: "/videos/f2.mp4",
+    src: asset("videos/f2.mp4"),
     rotation: "rotate-z-[4deg]",
     name: "Alexander",
-    img: "/images/p2.png",
+    img: asset("images/p2.png"),
   },
   {
-    src: "/videos/f3.mp4",
+    src: asset("videos/f3.mp4"),
     rotation: "rotate-z-[-4deg]",
     name: "Andrew",
-    img: "/images/p3.png",
+    img: asset("images/p3.png"),
     translation: "translate-y-[-5%]",
   },
   {
-    src: "/videos/f4.mp4",
+    src: asset("videos/f4.mp4"),
     rotation: "rotate-z-[4deg]",
     name: "Bryan",
-    img: "/images/p4.png",
+    img: asset("images/p4.png"),
     translation: "translate-y-[5%]",
   },
   {
-    src: "/videos/f5.mp4",
+    src: asset("videos/f5.mp4"),
     rotation: "rotate-z-[-10deg]",
     name: "Chris",
-    img: "/images/p5.png",
+    img: asset("images/p5.png"),
   },
   {
-    src: "/videos/f6.mp4",
+    src: asset("videos/f6.mp4"),
     rotation: "rotate-z-[4deg]",
     name: "Devante",
-    img: "/images/p6.png",
+    img: asset("images/p6.png"),
     translation: "translate-y-[5%]",
   },
   {
-    src: "/videos/f7.mp4",
+    src: asset("videos/f7.mp4"),
     rotation: "rotate-z-[-3deg]",
     name: "Melisa",
-    img: "/images/p7.png",
+    img: asset("images/p7.png"),
     translation: "translate-y-[10%]",
   },
 
